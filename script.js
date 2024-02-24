@@ -7,7 +7,7 @@ document.getElementById('submitButton').addEventListener('click', async () => {
   const links = document.getElementById('socialLinks').value.trim();
   const body = JSON.stringify({ userId, links });
 
-  console.log('Request Body:', body); // Log the request body
+ 
 
   try {
     const response = await fetch('https://g2wyhphzc2.execute-api.ap-south-1.amazonaws.com/dev/qrGenerator', {
@@ -18,7 +18,7 @@ document.getElementById('submitButton').addEventListener('click', async () => {
       }
     });
     const data = await response.json();
-    console.log('Response:', data);
+    
 
     if (data.message === "QR code uploaded successfully" && data.downloadUrl) {
       const downloadUrl = data.downloadUrl;
