@@ -23,8 +23,10 @@ html {
   padding: 20px;
   border-radius: 10px;
   max-width: 350px;
+  margin: 0 20px; /* Add margin to the form */
   margin-bottom: 20px; /* Add space between the form and other elements */
 }
+
 
 .title {
   font-size: 2rem;
